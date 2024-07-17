@@ -1,0 +1,169 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; 
+            color: #333; 
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            color: #006400; /* Dark green heading */
+        }
+
+        /* Forms */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        button {
+            margin: 5px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #f0e68c; /* Light yellow button */
+            color: #333; /* Dark gray text */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ffcc00; /* Brighter yellow on hover */
+        }
+
+        /* Lists */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            margin-bottom: 5px;
+            background-color: #add8e6; /* Light blue list item */
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        li:hover {
+            background-color: #87ceeb; /* Brighter blue on hover */
+        }
+
+        /* Chat messages */
+        #messages {
+            max-height: 300px;
+            overflow-y: scroll;
+            padding: 10px;
+            background-color: #f0f0f0; /* Light gray message box */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #messages li {
+            background-color: #ffffff; /* White message bubble */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-bottom: 5px;
+        }
+
+        /* Section containers */
+        div {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fffacd; /* Pale yellow container background */
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+         .navbar {
+            background-color: #333; /* Dark background */
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd; /* Lighter background on hover */
+            color: black;
+        }
+   /* Style for the login and registration forms */
+        .form-container {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: #fffacd; /* Pale yellow container background */
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .form-container.active {
+            display: flex;
+        }
+
+        .form-container h2 {
+            color: #006400; /* Dark green heading */
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="password"],
+        .form-container button {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-container button {
+            background-color: #f0e68c; /* Light yellow button */
+            color: #333; /* Dark gray text */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background-color: #ffcc00; /* Brighter yellow on hover */
+        }
+        /* Additional CSS for sent and received messages */
+#messages .sent {
+    text-align: right;
+    background-color: #add8e6; /* Light blue for sent messages */
+    margin-left: auto;
+}
+
+#messages .received {
+    text-align: left;
+    background-color: #f0f0f0; /* Light gray for received messages */
+    margin-right: auto;
+}
+        /* Responsive design */
+        @media (max-width: 600px) {
+            div {
+                padding: 10px;
+            }
+        }
